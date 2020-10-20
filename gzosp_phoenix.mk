@@ -6,17 +6,11 @@
 
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Maintainer
-XTENDED_MAINTAINER := GtrCraft
+# Inherit some common GZR stuff.
+$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_phoenix
+PRODUCT_NAME := gzosp_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X2
